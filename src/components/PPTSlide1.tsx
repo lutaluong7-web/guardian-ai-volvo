@@ -33,39 +33,40 @@ const PPTSlide1 = () => {
           </p>
         </div>
 
-        {/* Core Concept */}
-        <div className="flex-1 grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Foundation */}
-          <div className="space-y-8 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <Card className="feature-card">
-              <div className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-6">
-                  <span className="text-3xl font-bold text-accent-foreground">1</span>
+        {/* Core Architecture */}
+        <div className="flex-1 flex flex-col justify-center">
+          <div className="max-w-5xl mx-auto">
+            
+            {/* Foundation */}
+            <div className="text-center mb-16 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <Card className="feature-card max-w-3xl mx-auto">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-gradient-accent mb-8">
+                    <span className="text-4xl font-bold text-accent-foreground">1</span>
+                  </div>
+                  <h3 className="text-3xl font-bold text-primary mb-6">基石</h3>
+                  <h4 className="text-2xl font-semibold mb-6 text-foreground">
+                    Foundational Intelligence
+                  </h4>
+                  <h5 className="text-xl font-medium text-primary mb-4">统一智能大脑</h5>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    基于混合式大模型架构和多模态感知能力，融合longchain等能力，
+                    为AI Guardian提供了强大的理解、推理和执行能力。
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-4">基石</h3>
-                <h4 className="text-xl font-semibold mb-4 text-foreground">
-                  Foundational Intelligence
-                </h4>
-                <h5 className="text-lg font-medium text-primary mb-3">统一智能大脑</h5>
-                <p className="text-muted-foreground leading-relaxed">
-                  基于混合式大模型架构和多模态感知能力，融合longchain等能力，
-                  为AI Guardian提供了强大的理解、推理和执行能力。
-                </p>
-              </div>
-            </Card>
-          </div>
+              </Card>
+            </div>
 
-          {/* Right: Pillars */}
-          <div className="space-y-6 animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <Card className="feature-card">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center">
-                  <span className="text-xl font-bold text-accent-foreground">2</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold text-primary mb-2">大支柱</h3>
-                  <h4 className="text-lg font-semibold mb-3 text-foreground">
-                    第一支柱：极致的车内体验
+            {/* Two Pillars Overview */}
+            <div className="grid md:grid-cols-2 gap-8 animate-slide-up" style={{ animationDelay: '0.6s' }}>
+              <Card className="feature-card border-l-4 border-l-primary">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-primary mb-6">
+                    <span className="text-2xl font-bold text-primary-foreground">支柱1</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-4">第一支柱</h3>
+                  <h4 className="text-lg font-semibold mb-4 text-foreground">
+                    极致的车内体验
                   </h4>
                   <p className="text-sm text-muted-foreground mb-4">
                     The Guardian & Sanctuary
@@ -75,17 +76,16 @@ const PPTSlide1 = () => {
                     深度融合沃尔沃的品牌DNA。
                   </p>
                 </div>
-              </div>
-            </Card>
+              </Card>
 
-            <Card className="feature-card">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center">
-                  <span className="text-xl font-bold text-accent-foreground">+</span>
-                </div>
-                <div className="flex-1">
-                  <h4 className="text-lg font-semibold mb-3 text-foreground">
-                    第二支柱：无缝的跨端生态
+              <Card className="feature-card border-l-4 border-l-accent">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-accent mb-6">
+                    <span className="text-2xl font-bold text-accent-foreground">支柱2</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-accent mb-4">第二支柱</h3>
+                  <h4 className="text-lg font-semibold mb-4 text-foreground">
+                    无缝的跨端生态
                   </h4>
                   <p className="text-sm text-muted-foreground mb-4">
                     The Seamless Ecosystem
@@ -95,8 +95,8 @@ const PPTSlide1 = () => {
                     彻底打破手机与车机的壁垒。
                   </p>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
           </div>
         </div>
 
@@ -105,8 +105,9 @@ const PPTSlide1 = () => {
           <div className="flex space-x-3">
             <div className="w-4 h-4 rounded-full bg-primary"></div>
             <div className="w-4 h-4 rounded-full bg-muted"></div>
+            <div className="w-4 h-4 rounded-full bg-muted"></div>
           </div>
-          <p className="text-sm text-muted-foreground ml-4">第 1 页，共 2 页</p>
+          <p className="text-sm text-muted-foreground ml-4">第 1 页，共 3 页</p>
         </div>
       </div>
     </div>

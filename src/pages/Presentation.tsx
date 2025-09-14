@@ -3,12 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import PPTSlide1 from "@/components/PPTSlide1";
 import PPTSlide2 from "@/components/PPTSlide2";
+import PPTSlide3 from "@/components/PPTSlide3";
 
 const Presentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   
-  const slides = [PPTSlide1, PPTSlide2];
+  const slides = [PPTSlide1, PPTSlide2, PPTSlide3];
   const SlideComponent = slides[currentSlide];
 
   const nextSlide = () => {
