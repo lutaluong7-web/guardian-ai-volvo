@@ -78,17 +78,21 @@ const PPTSlide1 = () => {
               </div>
             </Card>
 
-            <Card className="feature-card border-dashed border-primary/30">
+            <Card className="feature-card">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-r from-secondary to-muted flex items-center justify-center">
-                  <span className="text-xl font-bold text-muted-foreground">+</span>
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center">
+                  <span className="text-xl font-bold text-accent-foreground">+</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold mb-3 text-muted-foreground">
-                    第二支柱：即将揭晓
+                  <h4 className="text-lg font-semibold mb-3 text-foreground">
+                    第二支柱：无缝的跨端生态
                   </h4>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    更多创新功能将在下一页详细展示...
+                  <p className="text-sm text-muted-foreground mb-4">
+                    The Seamless Ecosystem
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    构建覆盖全场景的统一服务生态，通过"One Agent / One ID"架构，
+                    彻底打破手机与车机的壁垒。
                   </p>
                 </div>
               </div>
