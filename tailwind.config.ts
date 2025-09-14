@@ -57,6 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        volvo: {
+          blue: "hsl(var(--volvo-blue))",
+          orange: "hsl(var(--volvo-orange))",
+          dark: "hsl(var(--volvo-dark))",
+          surface: "hsl(var(--volvo-surface))",
+          "surface-light": "hsl(var(--volvo-surface-light))",
+        },
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-card": "var(--gradient-card)",
+        "gradient-accent": "var(--gradient-accent)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
       },
       borderRadius: {
         lg: "var(--radius)",
